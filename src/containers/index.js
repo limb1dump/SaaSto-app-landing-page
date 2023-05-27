@@ -1,0 +1,9 @@
+export { default as Header } from './Header/Header';
+export { default as Analytics } from './Analytics/Analytics';
+export { default as Features } from './Features/Features';
+export { default as Footer } from './Footer/Footer';
+export { default as Offer } from './Offer/Offer';
+export { default as Overview } from './Overview/Overview';
+export { default as Partners } from './Partners/Partners';
+export { default as Pricing } from './Pricing/Pricing';
+export { default as Testimonial } from './Testimonial/Testimonial';
