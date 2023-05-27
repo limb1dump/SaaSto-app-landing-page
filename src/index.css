@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Nunito+Sans&display=swap');
+
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif; 
+font-family: 'Nunito Sans', sans-serif;
+*/
+
 :root {
-    /* Colors */
+    /* colors */
+    /* text colors */
+    --primary-text-color: #404040;
+    --secondary-text-color: #1C0E0D;
+    --primary-inverted-text-color: #FFFFFF;
+    --secondary-inverted-text-color: #FF553E;
+    --primary-title-color: #18063C;
+    /* bg-colors */
+    --btn-color: #FF553E;
+    --primary-bg-color: #FFF8F2;
+
+    /* fonts */
+    --base-font: 'Inter', sans-serif;
+    --secondary-font: 'Poppins', sans-serif;
 }
