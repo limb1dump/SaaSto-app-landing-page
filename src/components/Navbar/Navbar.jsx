@@ -1,11 +1,12 @@
 import './Navbar.scss'
-
+import { images } from '../../constants';
 
 const Navbar = () => {
+    const menu = ['Demos', 'Features', 'Pricing', 'Contact']
+
     return (
-        <div>
-            Navbar
-        </div>
+        <nav>
+        </nav>
     );
 };
 
