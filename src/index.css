@@ -14,8 +14,10 @@ font-family: 'Nunito Sans', sans-serif;
     --primary-inverted-text-color: #FFFFFF;
     --secondary-inverted-text-color: #FF553E;
     --primary-title-color: #18063C;
+
     /* bg-colors */
     --btn-color: #FF553E;
+    --secondary-btn-color: #FFFFFF;
     --primary-bg-color: #FFF8F2;
 
     /* fonts */

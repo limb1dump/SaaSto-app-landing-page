@@ -1,5 +1,6 @@
 // Header
-import logo from '../assets/Images/Header/logo.svg';
+import logoIcon from '../assets/Images/Header/logo-icon.svg';
+import logoTitle from '../assets/Images/Header/logo-title.svg';
 import headerClipboard from '../assets/Images/Header/header-clipboard.png';
 import headerClock from '../assets/Images/Header/header-clock.png';
 import headerMobileBlack from '../assets/Images/Header/header-mobile-black.svg';
@@ -58,7 +59,8 @@ import sharpSinus from '../assets/Shapes/sharp-sinus.svg'
 
 export default {
     // Header
-    logo,
+    logoIcon,
+    logoTitle,
     headerClipboard,
     headerClock,
     headerMobileBlack,
