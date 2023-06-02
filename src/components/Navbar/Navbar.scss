@@ -1,10 +1,14 @@
 .navbar {
-    font-family: var(--secondary-font);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 2.5rem;
+    background-color: var(--primary-bg-color);
+
+    &__row {
+        font-family: var(--secondary-font);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2.5rem;
+    }
 
     //logo
     &__logo {

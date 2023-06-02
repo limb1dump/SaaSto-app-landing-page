@@ -1,3 +1,92 @@
 .header {
+    background-color: var(--primary-bg-color);
     color: var(--prime);
+    position: relative;
+    z-index: -1;
+
+    &__container {
+        max-width: 790px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 13.75rem;
+        padding-bottom: 11.375rem;
+    }
+
+    &__title {
+        font-family: var(--secondary-font);
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 5.625rem;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    &_text {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 1.5rem 0 4.25rem 0;
+        padding: 0 83px;
+    }
+
+    &__sinus img {
+        position: absolute;
+        height: 134px;
+        width: 84px;
+        right: -32px;
+        top: 0px;
+        z-index: -1;
+    }
+
+    &__curves img {
+        position: absolute;
+        height: 122px;
+        width: 87px;
+        right: 321px;
+        top: 147px;
+        z-index: -1;
+    }
+
+    &__sharp-sinus img {
+        position: absolute;
+        height: 121px;
+        width: 174px;
+        left: 240px;
+        top: 103px;
+        z-index: -1;
+    }
+
+    &__thick img {
+        position: absolute;
+        height: 35px;
+        width: 176px;
+        left: 558px;
+        top: 367px;
+        z-index: -1;
+    }
+
+    &__dimond img {
+        position: absolute;
+        height: 62px;
+        width: 53.142860412597656px;
+        left: 627px;
+        top: 688px;
+        z-index: -1;
+    }
+
+    &__arrow-loop img {
+        position: absolute;
+        height: 130px;
+        width: 157px;
+        left: 1144px;
+        top: 598px;
+        z-index: -1;
+    }
 }

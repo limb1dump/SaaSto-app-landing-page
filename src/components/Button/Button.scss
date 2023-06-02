@@ -19,13 +19,11 @@
     }
 }
 
-//inverted btn
-.btn-inverted {
-    padding: 1rem 2rem;
+.btn.btn-inverted {
     color: var(--secondary-inverted-text-color);
     background: var(--secondary-btn-color);
-    border-radius: 2.125rem;
-    font-family: var(--secondary-font);
-    font-weight: 500;
-    font-size: 1.125rem;
+}
+
+.btn.btn-header {
+    padding: 1.5rem 2.5rem;
 }

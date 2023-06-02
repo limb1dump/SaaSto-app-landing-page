@@ -6,18 +6,16 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='container'>
-        <Navbar />
-        <Header />
-        <Features />
-        <Analytics />
-        <Overview />
-        <Pricing />
-        <Partners />
-        <Testimonial />
-        <Offer />
-        <Footer />
-      </div>
+      <Navbar />
+      <Header />
+      <Features />
+      <Analytics />
+      <Overview />
+      <Pricing />
+      <Partners />
+      <Testimonial />
+      <Offer />
+      <Footer />
     </div>
   )
 }

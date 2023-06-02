@@ -9,24 +9,7 @@ body.no-scroll {
     width: 100%;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: var(--primary-bg-color);
-}
-
-.container {
-    width: 100%;
-    padding: 0 10px;
-    max-width: 1190px;
-
-    @media screen and (max-width: 1050px) {
-        max-width: 970px;
-    }
-
-    @media screen and (max-width: 760px) {
-        max-width: 640px;
-    }
-
-    @media screen and (max-width: 480px) {
-        max-width: 327px;
-    }
+    font-weight: 400;
 }
