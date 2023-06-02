@@ -5,61 +5,175 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 2.5rem;
-}
 
-.navbar__logo {
-    display: flex;
-    align-items: center;
-    flex-basis: 33.33%;
-    padding-top: 0.375rem;
-
-    &:hover {
-        cursor: pointer;
-    }
-}
-
-.navbar__icon {
-    margin-right: 0.75rem;
-
-    img {
-        width: 100%;
-    }
-}
-
-.navbar__title {
-    img {
-        width: 100%;
-    }
-}
-
-.navbar__menu {
-    display: flex;
-    flex: 1 1 auto;
-    gap: 3rem;
-
-    li {
-        font-size: 1.125rem;
-        color: var(--secondary-text-color);
-        line-height: 1.5rem;
-        transition: 0.2s ease all;
+    //logo
+    &__logo {
+        display: flex;
+        align-items: center;
+        flex-basis: 33.33%;
+        padding-top: 0.375rem;
 
         &:hover {
-            color: var(--secondary-inverted-text-color);
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 1050px) {
+            flex-basis: 70%;
         }
     }
-}
 
-.navbar__enter {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-basis: 18.63%;
-    gap: 2.3125rem;
-}
+    &__icon {
+        margin-right: 0.75rem;
 
+        img {
+            width: 100%;
+        }
+    }
 
-.navbar__login {
-    letter-spacing: 0.0625rem;
-    font-weight: 500;
-    color: var(--secondary-inverted-text-color);
+    &__title {
+        img {
+            width: 100%;
+        }
+    }
+
+    //menu list
+    &__nav-list {
+        display: flex;
+        flex: 1 1 auto;
+        gap: 3rem;
+
+        li {
+            font-size: 1.125rem;
+            color: var(--secondary-text-color);
+            line-height: 1.5rem;
+            transition: 0.2s ease all;
+
+            &:hover {
+                color: var(--secondary-inverted-text-color);
+            }
+        }
+
+        @media screen and (max-width: 1050px) {
+            display: none;
+        }
+
+    }
+
+    //login
+    &__enter {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-basis: 18.63%;
+        gap: 2.3125rem;
+
+        @media screen and (max-width: 1050px) {
+            display: none;
+        }
+    }
+
+    &__login {
+        letter-spacing: 0.0625rem;
+        font-weight: 500;
+        color: var(--secondary-inverted-text-color);
+    }
+
+    //burger icon
+    &__burger {
+        position: relative;
+        z-index: 1;
+        display: none;
+
+        @media screen and (max-width: 1050px) {
+            display: block;
+        }
+    }
+
+    &__burger-field {
+        display: flex;
+        flex-direction: column;
+        gap: 0.375rem;
+        padding: 0.625rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__burger-line {
+        transition: 0.3s ease all;
+        width: 1.875rem;
+        height: 0.25rem;
+        background: var(--btn-color);
+        border-radius: 0.25rem;
+    }
+
+    &__burger-field.active {
+        .navbar__burger-line {
+            &:nth-child(1) {
+                transform: translateY(10px) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:nth-child(3) {
+                transform: translateY(-10px) rotate(-45deg);
+            }
+        }
+    }
+
+    //burger menu
+    &__burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-bottom: 3.125rem;
+        background: var(--primary-bg-color);
+        transform: translateX(100%);
+        transition: 0.3s ease all;
+
+        @media screen and (min-width: 1050px) {
+            display: none;
+        }
+    }
+
+    &__burger-menu.active {
+        transform: translateX(0%);
+    }
+
+    //burger menu inside
+    &__burger-nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.9375rem;
+        font-size: 1.5rem;
+        flex: 1 1 auto;
+
+        li {
+            color: var(--secondary-text-color);
+            transition: 0.2s ease all;
+
+            &:hover {
+                color: var(--secondary-inverted-text-color);
+            }
+        }
+    }
+
+    &__burger-enter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.9375rem;
+    }
 }

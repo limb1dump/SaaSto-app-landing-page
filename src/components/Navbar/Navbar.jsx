@@ -1,9 +1,17 @@
 import './Navbar.scss'
 import { images } from '../../constants';
 import Button from '../Button/Button';
+import Burger from './Burger';
+import { useState } from 'react';
 
 const Navbar = () => {
-    const menu = ['Demos', 'Features', 'Pricing', 'Contact']
+    const menu = ['Demos', 'Features', 'Pricing', 'Contact'];
+    const [toggleBurger, setToggleBurger] = useState(false);
+
+    const openBurger = () => {
+        setToggleBurger(!toggleBurger);
+        document.body.classList.toggle("no-scroll"); //in this case i'm not manipulating the DOM that React is rendering, i'm manipulating its parent, so it's ok to use such line
+    }
 
     return (
         <nav className='navbar'>
@@ -15,9 +23,9 @@ const Navbar = () => {
                     <img src={images.logoTitle} alt='logo' />
                 </div>
             </div>
-            <ul className="navbar__menu">
+            <ul className="navbar__nav-list">
                 {menu.map(item => (
-                    <li className="navbar__list-item" key={`link-${item}`}>
+                    <li key={`link-${item}`}>
                         <div />
                         <a href={`#${item}`}>{item}</a>
                     </li>
@@ -27,7 +35,24 @@ const Navbar = () => {
                 <a href="" className="navbar__login">Login</a>
                 <Button btnClass={'btn'}>Sign up</Button>
             </div>
-        </nav>
+            <Burger openBurger={openBurger} toggleBurger={toggleBurger} />
+            <div
+                className={`${toggleBurger ? 'navbar__burger-menu active' : 'navbar__burger-menu'}`}
+            >
+                <ul className="navbar__burger-nav-list">
+                    {menu.map(item => (
+                        <li key={`id-${item}`}>
+                            <div />
+                            <a href={`#${item}`}>{item}</a>
+                        </li>
+                    ))}
+                </ul>
+                <div className="navbar__burger-enter">
+                    <a href="" className="navbar__login">Login</a>
+                    <Button btnClass={'btn'}>Sign up</Button>
+                </div>
+            </div>
+        </nav >
     );
 };
 
