@@ -27,3 +27,12 @@
 .btn.btn-header {
     padding: 1.5rem 2.5rem;
 }
+
+.btn-wrapper {
+    @media screen and (max-width: 480px) {
+        display: flex;
+        align-self: flex-start;
+        padding-left: 8px;
+    }
+
+}

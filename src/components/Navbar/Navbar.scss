@@ -8,6 +8,11 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 2.5rem;
+
+        @media screen and (max-width: 480px) {
+            padding-top: 1.3125rem;
+        }
+
     }
 
     //logo
@@ -24,19 +29,34 @@
         @media screen and (max-width: 1050px) {
             flex-basis: 70%;
         }
+
     }
 
     &__icon {
         margin-right: 0.75rem;
+        max-width: 2.5rem;
 
         img {
             width: 100%;
         }
+
+        @media screen and (max-width: 480px) {
+            margin-right: 10.5px;
+            max-width: 1.875rem;
+        }
+
     }
 
     &__title {
+        max-width: 7.8125rem;
+
         img {
             width: 100%;
+        }
+
+        @media screen and (max-width: 480px) {
+            max-width: 5.875rem;
+
         }
     }
 
