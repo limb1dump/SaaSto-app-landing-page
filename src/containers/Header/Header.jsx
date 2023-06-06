@@ -1,8 +1,6 @@
 import Button from '../../components/Button/Button';
 import '../../assets/container.scss'
 import './Header.scss'
-import { images } from '../../constants';
-
 
 
 const Header = () => {
@@ -20,8 +18,8 @@ const Header = () => {
                     <p className="header__text">
                         An enim nullam tempor sapien gravida donec enim ipsum porta justo &nbsp;congue magna at pretium purus pretium ligula
                     </p>
-                    <div className='btn-wrapper'>
-                        <Button btnHeader='btn-header'>
+                    <div className="header__btn-wrapper">
+                        <Button className="btn-header">
                             Start 14 Days Trial
                         </Button>
                     </div>

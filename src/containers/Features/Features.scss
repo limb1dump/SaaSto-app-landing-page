@@ -1,0 +1,18 @@
+.features {
+    background: url('../../assets/Images/Feature/feature-bg.svg')top 0 left 0;
+    background-color: var(--primary-bg-color);
+    padding-top: 94px;
+
+    &__body {}
+
+    &__stat-row {
+        display: flex;
+        gap: 181px;
+    }
+
+    &__stats {
+        &:last-child {
+            margin-left: 12px;
+        }
+    }
+}

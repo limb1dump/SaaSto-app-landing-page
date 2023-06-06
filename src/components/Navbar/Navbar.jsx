@@ -37,7 +37,7 @@ const Navbar = () => {
                     </ul>
                     <div className="navbar__enter">
                         <a href="" className="navbar__login">Login</a>
-                        <Button btnMain={'btn'}>Sign up</Button>
+                        <Button>Sign up</Button>
                     </div>
                     <Burger openBurger={openBurger} toggleBurger={toggleBurger} />
                     <div
@@ -53,7 +53,7 @@ const Navbar = () => {
                         </ul>
                         <div className="navbar__burger-enter">
                             <a href="" className="navbar__login">Login</a>
-                            <Button btnMain={'btn'}>Sign up</Button>
+                            <Button>Sign up</Button>
                         </div>
                     </div>
                 </div>

@@ -12,27 +12,13 @@
     white-space: nowrap;
     transition: 0.2s ease all;
 
-
     &:hover {
         cursor: pointer;
         box-shadow: 0.125rem 0.125rem 0.3125rem rgba($color: #000000, $alpha: 0.4);
     }
 }
 
-.btn.btn-inverted {
+.btn-inverted {
     color: var(--secondary-inverted-text-color);
     background: var(--secondary-btn-color);
-}
-
-.btn.btn-header {
-    padding: 1.5rem 2.5rem;
-}
-
-.btn-wrapper {
-    @media screen and (max-width: 480px) {
-        display: flex;
-        align-self: flex-start;
-        padding-left: 8px;
-    }
-
 }

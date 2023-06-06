@@ -1,33 +1,13 @@
-import './Button.scss'
+import "./Button.scss"
 
 
-const Button = ({ children, btnMain, btnHeader, btnInverted }) => {
+const Button = ({ children, className = "" }) => {
 
-    if (btnMain) {
-        return (
-            <button className={btnMain}>
-                {children}
-            </button>
-        );
-    }
-
-    if (btnInverted) {
-        return (
-            <button className={`btn ${btnInverted}`}>
-                {children}
-            </button>
-        );
-    }
-
-    if (btnHeader) {
-        return (
-            <button className={`btn ${btnHeader}`}>
-                {children}
-            </button>
-        );
-    }
+    return (
+        <button className={`btn ${className}`}>
+            {children}
+        </button>
+    );
 };
 
 export default Button;
-
-// {`${btnClass} ? ${btnClass} : btn-inverted`}
