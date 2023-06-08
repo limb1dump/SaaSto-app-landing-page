@@ -3,7 +3,7 @@ import './Overview.scss'
 
 const Overview = () => {
     return (
-        <div>
+        <div className={`${'large'} ${'small'} ${'medium'} ${'large'} ${'large'}`}>
             Overview
         </div>
     );

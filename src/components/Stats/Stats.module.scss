@@ -1,0 +1,41 @@
+.default {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+
+    &__count {
+        font-family: var(--secondary-font);
+        font-weight: 600;
+        color: var(--primary-title-color);
+        font-size: 3rem;
+        line-height: 4rem;
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        font-size: 1.125rem;
+        line-height: 1.125rem;
+    }
+}
+
+.large {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+
+    &__count {
+        font-family: var(--secondary-font);
+        font-weight: 600;
+        color: var(--primary-title-color);
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        font-size: 1.125rem;
+        line-height: 1.125rem;
+    }
+}

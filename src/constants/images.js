@@ -9,7 +9,7 @@ import headerMobileBlack from '../assets/Images/Header/header-mobile-black.svg';
 import featureAgenda from '../assets/Images/Feature/feature-agenda.svg';
 import featureBell from '../assets/Images/Feature/feature-bell.svg';
 import featureRocket from '../assets/Images/Feature/feature-rocket.png';
-import headerTasList from '../assets/Images/Feature/feature-task-list.svg';
+import featureTaskList from '../assets/Images/Feature/feature-task-list.svg';
 
 // Overview
 import overviewClock from '../assets/Images/Overview/overview-clock.svg'
@@ -38,7 +38,6 @@ import testimonialLike from '../assets/Images/Testimonial/testimonial-like.svg'
 // Offer
 import offerBlueHand from '../assets/Images/Offer/offer-blue-hand.svg'
 import offerVioletHand from '../assets/Images/Offer/offer-violet-hand.svg'
-import offerMobileScreen from '../assets/Images/Offer/offer-mobile-screen.svg'
 
 // Footer
 import footerFacebook from '../assets/Images/Footer/footer-facebook.svg'
@@ -69,7 +68,7 @@ export default {
     featureAgenda,
     featureBell,
     featureRocket,
-    headerTasList,
+    featureTaskList,
 
     // Overview
     overviewClock,
@@ -98,7 +97,6 @@ export default {
     // Offer
     offerBlueHand,
     offerVioletHand,
-    offerMobileScreen,
 
     // Footer
     footerFacebook,
