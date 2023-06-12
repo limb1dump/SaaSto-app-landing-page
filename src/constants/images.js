@@ -1,15 +1,25 @@
 // Header
-import logoIcon from '../assets/Images/Header/logo-icon.svg';
-import logoTitle from '../assets/Images/Header/logo-title.svg';
-import headerClipboard from '../assets/Images/Header/header-clipboard.png';
-import headerClock from '../assets/Images/Header/header-clock.png';
-import headerMobileBlack from '../assets/Images/Header/header-mobile-black.svg';
+import logoIcon from '../assets/Images/Header/logo-icon.svg'
+import logoTitle from '../assets/Images/Header/logo-title.svg'
+import headerClipboard from '../assets/Images/Header/header-clipboard.png'
+import headerClock from '../assets/Images/Header/header-clock.png'
+import headerMobileBlack from '../assets/Images/Header/header-mobile-black.svg'
 
 // Feature
-import featureAgenda from '../assets/Images/Feature/feature-agenda.svg';
-import featureBell from '../assets/Images/Feature/feature-bell.svg';
-import featureRocket from '../assets/Images/Feature/feature-rocket.png';
-import featureTaskList from '../assets/Images/Feature/feature-task-list.svg';
+import featureAgenda from '../assets/Images/Feature/feature-agenda.svg'
+import featureBell from '../assets/Images/Feature/feature-bell.svg'
+import featureRocket from '../assets/Images/Feature/feature-rocket.png'
+import featureTaskList from '../assets/Images/Feature/feature-task-list.svg'
+
+//Analytics
+import analyticsCalendar from '../assets/Images/Analytics/analytics-calendar.svg'
+import analyticsClipboard from '../assets/Images/Analytics/analytics-clipboard.png'
+import analyticsClock from '../assets/Images/Analytics/analytics-clock.svg'
+import analyticsDashboard from '../assets/Images/Analytics/analytics-dashboard.svg'
+import analyticsMobileScreen from '../assets/Images/Analytics/analytics-mobile-screen.svg'
+import analyticsKit1 from '../assets/Images/Analytics/analytics-screen-kit1.svg'
+import analyticsKit2 from '../assets/Images/Analytics/analytics-screen-kit2.svg'
+import analyticsKit3 from '../assets/Images/Analytics/analytics-screen-kit3.svg'
 
 // Overview
 import overviewClock from '../assets/Images/Overview/overview-clock.svg'
@@ -69,6 +79,16 @@ export default {
     featureBell,
     featureRocket,
     featureTaskList,
+
+    //Analytics
+    analyticsCalendar,
+    analyticsClipboard,
+    analyticsClock,
+    analyticsDashboard,
+    analyticsMobileScreen,
+    analyticsKit1,
+    analyticsKit2,
+    analyticsKit3,
 
     // Overview
     overviewClock,

@@ -62,10 +62,10 @@ const Features = () => {
                         })}
                     </div>
                     <div className='features__title-container'>
-                        <Title mode='large'>Some excellent features for you</Title>
+                        <Title size='large'>Some excellent features for you</Title>
                     </div>
                     <div className='features__title-container-mobile'>
-                        <Title mode='small'>Some excellent features for you</Title>
+                        <Title size='small'>Some excellent features for you</Title>
                     </div>
                     <div className="features__text">
                         <Text>
@@ -73,7 +73,7 @@ const Features = () => {
                         </Text>
                     </div>
                     <div className="features__text-mobile">
-                        <Text mode='small'>
+                        <Text size='small'>
                             An enim nullam tempor sapien gravida donec enim ipsum porta justo&nbsp;  congue magna at pretium purus pretium ligula
                         </Text>
                     </div>

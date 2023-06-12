@@ -18,7 +18,9 @@
             url('../../assets/Images/Feature/feature-bg.svg')top 0 left 0/150%;
     }
 
-    &__body {}
+    &__body {
+        padding-bottom: 77px;
+    }
 
     &__stats-row {
         display: flex;
